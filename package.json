@@ -1,0 +1,23 @@
+{
+  "name": "my-name",
+  "version": "1.0.0",
+  "description": "Das ist eine Beschreibung für die App oder dass Module, wenn es auf NPM veröffentlicht wird.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/user_name/my_module.git"
+  },
+  "keywords": [
+    "my_keyword",
+    "hapi"
+  ],
+  "author": "Nico Swiatecki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/user_name/my_module/issues"
+  },
+  "homepage": "https://github.com/user_name/my_module#readme"
+}
