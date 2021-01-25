@@ -5,6 +5,6 @@ export default function main() {
   for ( let i = 0; i < 20; i++ ) {
     info('New image is loading...');
     Img(i);
-    info(`loading done!`);
+    info('loading done!');
   }
 }
