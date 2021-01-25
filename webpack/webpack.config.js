@@ -7,6 +7,7 @@ module.exports = {
     path: `${__dirname}/.build`,
     filename: 'bundle.js'
   },
+  devtool: 'source-map',
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html'
@@ -28,7 +29,9 @@ module.exports = {
   },
   optimization: {
     minimizer: [
-      new UglifyJsPlugin()
+      new UglifyJsPlugin({
+        sourceMap: true
+      })
     ]
   }
 };
