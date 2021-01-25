@@ -1,13 +1,19 @@
+const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/js/index.js',
   output: {
-    path: `${__dirname}/.build`,
-    filename: 'bundle.js'
+    path: path.join(__dirname, '.build'),
+    filename: 'bundle.js',
   },
   devtool: 'source-map',
+  devServer: {
+    contentBase: path.join(__dirname, '.build'),
+    compress: true,
+    port: 9000
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html'
